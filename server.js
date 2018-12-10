@@ -72,6 +72,15 @@ app.get('/', (req,res) => {
 		welcomeMessage: 'Welcome to my site'
 	});
 });
+
+
+app.get('/projects',(req,res) => {
+	res.render('projects.hbs',{
+		pageTitle: 'Projects'
+	})
+})
+
+
 //create a new page
 app.get('/about',(req, res) => {
 	res.render('about.hbs',{
